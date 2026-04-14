@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolin&rsquo;s Experience | Kolin &amp; Mateo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="has-sidebar">
+
+  <aside class="page-sidebar">
+    <div class="sidebar-title"><a href="index.html">Visual Narrative<br>Kolin &amp; Mateo</a></div>
+    <nav class="sidebar-nav">
+      <a href="index.html">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#intent">Intent</a>
+      <a href="#process">Process</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#ai">Use of AI</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <nav class="page-topnav">
+    <a href="medal-deployment.html" class="nav-prev"><span class="nav-label">&larr; Previous</span>Medal Case</a>
+    <a href="index.html" class="nav-next"><span class="nav-label">Next &rarr;</span>Home</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">VR Artifact &mdash; Tina</p>
+        <h2>Kolin&rsquo;s Experience</h2>
+        <p class="hero-description">This VR experience presents Kolin&rsquo;s perspective for users who choose to protect the country after experiencing the letter of deployment artifact. It places users directly into his journey, allowing them to experience the events that follow his decision to enlist in the army.</p>
+        <div class="hero-gallery">
+          <div class="image-frame">
+            <img src="images/vr-hero-1.jpg" alt="Kolin's VR Experience" />
+          </div>
+          <div class="image-frame">
+            <img src="images/vr-hero-2.jpg" alt="Kolin's VR Experience" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">01</p><h2>Overview</h2></div>
+        <div class="content-block">
+          <p>This VR experience presents Kolin&rsquo;s perspective for users who choose to protect the country after experiencing the letter of deployment artifact. It places users directly into his journey, allowing them to experience the events that follow his decision to enlist in the army.</p>
+          <p>The experience unfolds across multiple scenes, following Kolin from protest to war and eventually to its consequences. Through immersion and interaction, it aims to help users understand not only what Kolin went through, but the impact of his decision over time.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-overview.jpg" alt="VR Experience overview" data-caption="Overview &mdash; Kolin's VR journey" /></div>
+            <p class="caption">Kolin&rsquo;s VR journey overview</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="intent">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">02</p><h2>Intent</h2></div>
+        <div class="content-block">
+          <p>The goal of this experience was to use immersion to reduce the distance between the user and the narrative.</p>
+          <p>Unlike the AR artifacts, where users can control their perspective and disengage, the VR experience places users directly inside Kolin&rsquo;s world. The interaction removes the ability to step back, requiring users to move through his experiences and confront the outcomes of his choices. Rather than observing the story, users inhabit it.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-intent.jpg" alt="VR Experience intent" data-caption="Intent &mdash; immersive narrative design" /></div>
+            <p class="caption">Intent development image</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">03</p><h2>Process</h2></div>
+        <div class="content-block">
+          <p>A large part of the process involved learning new tools. Both Unity and Blender were new, so early work focused on understanding how to:</p>
+          <ul>
+            <li>Build scenes</li>
+            <li>Manage assets</li>
+            <li>Create interactions</li>
+          </ul>
+          <p>Simple test scenes were first created in Unity to experiment with placing objects and building environments before moving into the full experience.</p>
+          <p>As the narrative developed, the experience was structured into four main scenes:</p>
+          <ul>
+            <li>A city scene representing protest</li>
+            <li>A battlefield representing war</li>
+            <li>A graveyard representing loss</li>
+            <li>A final scene showing Kolin receiving his award and discharge</li>
+          </ul>
+          <p>Each scene represents a stage in Kolin&rsquo;s journey, allowing users to move through his story rather than view it all at once.</p>
+          <p>To support this, key assets such as a gun and a badge were created in Blender and imported into Unity. These elements were chosen for both their visual presence and their narrative meaning.</p>
+          <p>Interaction was integrated directly into the environment using scripts and colliders. Users were able to pick up objects and move closer to key elements in the scene with the two key interactive objects were:</p>
+          <ul>
+            <li>The gun = Kolin&rsquo;s decision to join the war</li>
+            <li>The wheelchair = the consequences of that decision after he loses his leg</li>
+          </ul>
+          <p>These interactions were designed to communicate meaning through action rather than explanation.</p>
+        </div>
+
+        <div class="media-grid">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-process-1.jpg" alt="Unity scene building" data-caption="Process &mdash; Unity scene building and testing" /></div>
+            <p class="caption">Unity scene building</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-process-2.jpg" alt="Blender asset creation" data-caption="Process &mdash; Blender asset creation" /></div>
+            <p class="caption">Blender asset creation</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-process-3.jpg" alt="Interactive objects in VR" data-caption="Process &mdash; interactive objects (gun, wheelchair)" /></div>
+            <p class="caption">Interactive objects in VR</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="challenges">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">04</p><h2>Challenges</h2></div>
+        <div class="content-block">
+          <p>One of the main challenges was usability. During testing, many users were unsure of what they were supposed to do and which objects they could interact with. This made the experience feel unclear and reduced immersion.</p>
+          <p>To address this, visual hints were added into the environment to guide users toward possible interactions. These hints helped users understand what actions they could take without needing external instructions.</p>
+          <p>After this change, users were able to explore the experience more independently and engage more naturally with the environment.</p>
+          <p>Another challenge was the learning curve of the tools. Since both Unity and Blender were new, a significant amount of time was spent troubleshooting, experimenting, and learning workflows.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-challenges.jpg" alt="Usability testing and visual hints" data-caption="Challenges &mdash; usability testing and visual hints" /></div>
+            <p class="caption">Usability testing and visual hints</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">05</p><h2>Use of AI</h2></div>
+        <div class="content-block">
+          <p>AI tools were used throughout the process as a support system. They were used to:</p>
+          <ul>
+            <li>Find tutorials for Unity</li>
+            <li>Assist with scripting interactions</li>
+            <li>Troubleshoot technical issues</li>
+            <li>Guide setup for running the project on a VR headset</li>
+          </ul>
+          <p>AI helped speed up the learning process and provided guidance when working with unfamiliar systems.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-ai.jpg" alt="AI-assisted development" data-caption="Use of AI &mdash; tutorials and troubleshooting" /></div>
+            <p class="caption">AI-assisted development</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">06</p><h2>Reflection</h2></div>
+        <div class="content-block">
+          <p>This artifact demonstrates how immersion can be used to communicate emotional and narrative impact.</p>
+          <p>While the AR experiences allow users to control their distance from the story, the VR experience removes that control and places users directly within it. This contrast strengthens the overall project by showing two different ways of engaging with conflict.</p>
+          <p>It also highlighted the importance of clarity in interaction design. Even in immersive environments, users still need guidance to understand what they can do.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/vr-reflection.jpg" alt="Final VR Experience artifact" data-caption="Reflection &mdash; final VR artifact" /></div>
+            <p class="caption">Final VR Experience artifact</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><p>Visual Narrative Process Document</p><p>Kolin &amp; Mateo &mdash;</p></div></footer>
+</body>
+</html>

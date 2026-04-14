@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turning Away | Kolin &amp; Mateo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="has-sidebar">
+
+  <aside class="page-sidebar">
+    <div class="sidebar-title"><a href="index.html">Visual Narrative<br>Kolin &amp; Mateo</a></div>
+    <nav class="sidebar-nav">
+      <a href="index.html">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#intent">Intent</a>
+      <a href="#process">Process</a>
+      <a href="#ai">Use of AI</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <nav class="page-topnav">
+    <a href="mateos-escape.html" class="nav-prev"><span class="nav-label">&larr; Previous</span>Mateo&rsquo;s Escape</a>
+    <a href="ar-confrontation.html" class="nav-next"><span class="nav-label">Next &rarr;</span>AR Confrontation</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">AR Artifact 1 &mdash; Jesse</p>
+        <h2>Turning Away</h2>
+        <p class="hero-description">This artifact follows Mateo&rsquo;s decision to leave Mariscal and represents his choice to disengage from conflict. Instead of interacting through a traditional interface, users can physically turn their body away from a war environment and toward a &ldquo;peaceful one.&rdquo;</p>
+        <div class="hero-gallery">
+          <div class="image-frame">
+            <img src="images/ar-turnaway-hero-1.jpg" alt="Turning Away" />
+          </div>
+          <div class="image-frame">
+            <img src="images/ar-turnaway-hero-2.jpg" alt="Turning Away" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">01</p><h2>Overview</h2></div>
+        <div class="content-block">
+          <p>This artifact follows Mateo&rsquo;s decision to leave Mariscal and represents his choice to disengage from conflict. Instead of interacting through a traditional interface, users can physically turn their body away from a war environment and toward a &ldquo;peaceful one.&rdquo; This movement mirrors Mateo&rsquo;s attempt to create distance from the war the realities of war only to see that it isn&rsquo;t possible, representing the theme of being unable to ignore realities and that it can only be shifted out of focus.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-overview.jpg" alt="AR Turning Away overview" data-caption="Overview — AR turning away experience" /></div>
+            <p class="caption">AR Turning Away overview</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="intent">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">02</p><h2>Intent</h2></div>
+        <div class="content-block">
+          <p>The goal of this interaction was to design an experience that represents Mateo&rsquo;s mindset in a spatial experience. I wanted users to control what they see through their own movement, just like Mateo controls his attention by turning away from the conflict.</p>
+          <p>Rather than presenting a clear &ldquo;choice&rdquo;, the interaction creates a situation where the user feels like they are choosing peace but still surrounded by the consequences of their decision.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-intent.jpg" alt="AR Turning Away intent" data-caption="Intent — spatial experience design" /></div>
+            <p class="caption">Intent development image</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">03</p><h2>Process</h2></div>
+        <div class="content-block">
+          <p>Initially I planned to build this artifact in Unity, but after going through tutorials I realized that the difference in mobile device performance would create too many inconsistencies in how the experience behaved.</p>
+          <p>Instead to create an equal opportunity experience, I shifted my attention to Lens Studio, which is already optimized through devices through Snapchat. This allowed me to build a more stable AR experience that would behave consistently for users. Using Lens Studio, my goal was to create a spatial setup where:</p>
+          <ul>
+            <li>A war environment exists in front of the user</li>
+            <li>A peaceful environment appears when the user turns around</li>
+          </ul>
+          <p>I sourced my models and scenery from poly.pizza, a free model website where models were designed with optimized geometry and a low file size. This was to keep performance optimized across all devices as using heavier, high detailed models would have slowed down the experience or made it unstable across different devices. Using low poly assets allowed me to maintain a smooth performance while still building a readable scene.</p>
+          <p>But before I inserted models or created a scene, I tested using simple cubes to find the optimal size of each scene and the optimal distances between both scenes where users could do the interaction of turning around and experience both scenes. After some adjustments with size and location and a test with the app, I was able to find the desired location and size of each scene.</p>
+          <p>With everything set up I was now ready to create my scene. Building each scene required a vision and the right models to execute said vision. The war scene involved a destroyed environment of a damaged building and a burning car surrounded by citizens and soldiers. The peace scene, however, was a nice cabin in a mountain that seemed nice but when users would quickly see war planes flying overhead. However, I would need the help of AI to guide me as a tutorial as Lens Studio is a fairly new software and I would need help to find features I needed to create my scene.</p>
+          <p>A challenge, however, was the feeling of the scene. User testing showed that the scene was too bright for a war setting and contrasted too highly with the dark tone of the narrative and ultimately pulled them out. Also, the scene felt static and not an actual world. This led me to rethink my visual directions.</p>
+          <p>So, to rectify this I:</p>
+          <ul>
+            <li>Lowered exposure and lighting to create a darker tone</li>
+            <li>Added motion onto the planes to make the scene feel more alive</li>
+            <li>Refined how the scenes were positioned in the space</li>
+          </ul>
+        </div>
+
+        <div class="media-grid">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-process-1.jpg" alt="Lens Studio workspace" data-caption="Process — Lens Studio workspace" /></div>
+            <p class="caption">Lens Studio workspace</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-process-2.jpg" alt="Cube testing for scene layout" data-caption="Process — cube testing for spatial layout" /></div>
+            <p class="caption">Cube testing for scene layout</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-process-3.jpg" alt="Final scene with lighting adjustments" data-caption="Process — lighting and tone adjustments" /></div>
+            <p class="caption">Lighting and tone adjustments</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">04</p><h2>Use of AI</h2></div>
+        <div class="content-block">
+          <p>In this artifact use of A.I was used to helping me create a workflow, giving me tutorial on how to use the Lens Studio, and troubleshooting issues involving changing materials of models and adjusting their size and location.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-ai.jpg" alt="AI workflow and troubleshooting" data-caption="Use of AI — workflow and troubleshooting" /></div>
+            <p class="caption">AI workflow and troubleshooting</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">05</p><h2>Reflection</h2></div>
+        <div class="content-block">
+          <p>This artifact helped me understand how AR can be used to represent attention and avoidance through physical movement. And it also helped me expand on my concept of not showing users what they can control but the limits of their control much like the limits of Mateo&rsquo;s controlled experience.</p>
+          <p>It also showed me that technical decisions, like choosing the right platform, can shape the entire experience. Switching from Unity to Lens Studio may have simplified the system, but it required more experimentation and problem solving with the help of AI.</p>
+          <p>But this experience also became the foundation of our second AR artifact, where I carried my learnings forward onto a new idea.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-turnaway-reflection.jpg" alt="Final AR Turning Away artifact" data-caption="Reflection — final AR artifact" /></div>
+            <p class="caption">Final AR Turning Away artifact</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><p>Visual Narrative Process Document</p><p>Kolin &amp; Mateo &mdash;</p></div></footer>
+</body>
+</html>

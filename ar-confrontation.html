@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confrontation | Kolin &amp; Mateo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="has-sidebar">
+
+  <aside class="page-sidebar">
+    <div class="sidebar-title"><a href="index.html">Visual Narrative<br>Kolin &amp; Mateo</a></div>
+    <nav class="sidebar-nav">
+      <a href="index.html">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#intent">Intent</a>
+      <a href="#process">Process</a>
+      <a href="#ai">Use of AI</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <nav class="page-topnav">
+    <a href="ar-turn-around.html" class="nav-prev"><span class="nav-label">&larr; Previous</span>Turning Away</a>
+    <a href="index.html" class="nav-next"><span class="nav-label">Next &rarr;</span>Home</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">AR Artifact 2 &mdash; Jesse</p>
+        <h2>Confrontation</h2>
+        <p class="hero-description">This is one half of the final scene where Mateo is forced to confront the consequences of his decision and sees Kolin again.</p>
+        <div class="hero-gallery">
+          <div class="image-frame">
+            <img src="images/ar-confrontation-hero-1.jpg" alt="Confrontation" />
+          </div>
+          <div class="image-frame">
+            <img src="images/ar-confrontation-hero-2.jpg" alt="Confrontation" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">01</p><h2>Overview</h2></div>
+        <div class="content-block">
+          <p>This is one half of the final scene where Mateo is forced to confront the consequences of his decision and sees Kolin again.</p>
+          <p>Instead of turning away, like in the previous AR artifact, users must physically move closer to a staged scene where Kolin is receiving an award. As the user approaches, the scene animates and leads to moment of recognition between Kolin and the user (Mateo).</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-overview.jpg" alt="AR Confrontation overview" data-caption="Overview &mdash; AR confrontation experience" /></div>
+            <p class="caption">AR Confrontation overview</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="intent">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">02</p><h2>Intent</h2></div>
+        <div class="content-block">
+          <p>The goal of this artifact was to represent Mateo&rsquo;s confrontation with the consequences of his earlier decisions through spatial movement. I wanted users to control what they experience through proximity, where moving closer reveals the stage and animates it, mirroring how Mateo is forced to face what he once chose to ignore.</p>
+          <p>As users move forward the experience becomes more direct and unavoidable reinforcing the idea that even if the conflict is ignored at first, it cannot be escaped entirely.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-intent.jpg" alt="AR Confrontation intent" data-caption="Intent &mdash; proximity-based interaction" /></div>
+            <p class="caption">Intent development image</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">03</p><h2>Process</h2></div>
+        <div class="content-block">
+          <p>For this artifact I introduced a more complex pipeline where I created and animated the scene in Blender before importing the scene and triggering it the interaction in Lens Studio. I chose this process as opposed to creating it all in Lens Studio because Lens Studio had a much worse animating feature compared to Blender. I needed to create the minute movements required to showcase the emotions of the scene and Blender was a much better option to for that.</p>
+
+          <p>To begin I had to gather models, again using poly.pizza due to their low file and polygon size. But to create an accurate scene I had to edit models to match the narrative. This involved changing the materials of each model to create a darker tone, editing a male grizzled model into an amputee war veteran, combining different models to create a medal in a case, and combining said medal with another model&rsquo;s hand so they&rsquo;d be attached while animating. Though a tedious task it all culminated in making the next step of building and animating the scene much easier.</p>
+
+          <p>With the models finally prepared, I was able to put the final pivotal scene together with Kolin receiving an award on a stage surrounded by a crowd of people. Coming immediately from Lens Studio was a slight challenge as the navigation and UI were different.</p>
+          <p>The next steps in the process involved:</p>
+          <ul>
+            <li>Building and animating the scene in Blender</li>
+            <li>Staging characters within the moment</li>
+            <li>Exporting the scene into Lens Studio</li>
+            <li>Triggering the interaction based on user proximity when user is close enough</li>
+          </ul>
+
+          <p>The biggest challenges in this artifact were technical. After updating Lens Studio, previously working blender exports stopped functioning where at times models would import in a T-pose, lose their animation, or merge together after exporting. This led to a long troubleshooting process where I tested:</p>
+          <ul>
+            <li>Different export file types</li>
+            <li>Animation baking methods</li>
+            <li>Material settings</li>
+            <li>Armature and mesh structures</li>
+          </ul>
+          <p>To resolve this, I separated the animated models and exported them individually before doing a simple scene rebuild in Lens Studio.</p>
+        </div>
+
+        <div class="media-grid">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-process-1.jpg" alt="Blender animation pipeline" data-caption="Process &mdash; Blender animation pipeline" /></div>
+            <p class="caption">Blender animation pipeline</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-process-2.jpg" alt="Model editing and preparation" data-caption="Process &mdash; model editing and preparation" /></div>
+            <p class="caption">Model editing and preparation</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-process-3.jpg" alt="Final scene in Lens Studio" data-caption="Process &mdash; final scene in Lens Studio" /></div>
+            <p class="caption">Final scene in Lens Studio</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">04</p><h2>Use of AI</h2></div>
+        <div class="content-block">
+          <p>For this section AI was used mostly as a troubleshooter and helping me figure why my models were not exporting properly. However, after going through all the solutions AI provided I still could not fix the issue. But it did help me narrow down my problem and helped me discover that when exporting my models were mixing up the animation files, so in order to fix it I had to separate the animated models.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-ai.jpg" alt="AI troubleshooting workflow" data-caption="Use of AI &mdash; troubleshooting export issues" /></div>
+            <p class="caption">AI troubleshooting workflow</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">05</p><h2>Reflection</h2></div>
+        <div class="content-block">
+          <p>Although the process was frustrating at times, it significantly improved my understanding of 3D workflows and AR pipelines. Troubleshooting issues between Blender and Lens Studio forced me to think more critically about how assets are structured, exported and integrated.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/ar-confrontation-reflection.jpg" alt="Final AR Confrontation artifact" data-caption="Reflection &mdash; final AR artifact" /></div>
+            <p class="caption">Final AR Confrontation artifact</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><p>Visual Narrative Process Document</p><p>Kolin &amp; Mateo &mdash;</p></div></footer>
+</body>
+</html>

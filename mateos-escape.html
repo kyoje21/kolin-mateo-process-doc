@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Before the Getaway | Kolin &amp; Mateo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="has-sidebar">
+
+  <aside class="page-sidebar">
+    <div class="sidebar-title"><a href="index.html">Visual Narrative<br>Kolin &amp; Mateo</a></div>
+    <nav class="sidebar-nav">
+      <a href="index.html">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#intent">Intent</a>
+      <a href="#process">Process</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+  </aside>
+
+  <nav class="page-topnav">
+    <a href="arduino-interaction.html" class="nav-prev"><span class="nav-label">&larr; Previous</span>Arduino Interaction</a>
+    <a href="ar-turn-around.html" class="nav-next"><span class="nav-label">Next &rarr;</span>Turning Away</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Digital Artifact 2 &mdash; Jiayin</p>
+        <h2>Before the Getaway</h2>
+        <p class="hero-description">This artifact places the user inside Mateo&rsquo;s perspective as he prepares to escape his country. It takes the form of an interactive game where users must search for important documents within his home.</p>
+        <div class="hero-gallery">
+          <div class="image-frame">
+            <img src="images/getaway-hero-1.jpg" alt="Before the Getaway" />
+          </div>
+          <div class="image-frame">
+            <img src="images/getaway-hero-2.jpg" alt="Before the Getaway" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">01</p><h2>Overview</h2></div>
+        <div class="content-block">
+          <p>This artifact places the user inside Mateo&rsquo;s perspective as he prepares to escape his country. It takes the form of an interactive game where users must search for important documents within his home.</p>
+          <p>This experience requires active participation as the user must search for Mateo&rsquo;s documents.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-overview.jpg" alt="Before the Getaway overview" data-caption="Overview &mdash; interactive escape game" /></div>
+            <p class="caption">Interactive escape game overview</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="intent">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">02</p><h2>Intent</h2></div>
+        <div class="content-block">
+          <p>The goal of this digital artifact was to simulate the urgency and pressure of preparing to escape. By turning the experience into a search-based game, users are placed in Mateo&rsquo;s position where every action is time sensitive and tied to survival.</p>
+          <p>So, rather than simply telling the story, the interaction forces users to experience the stress, uncertainty, and decision making involved in escaping one&rsquo;s country.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-intent.jpg" alt="Before the Getaway intent" data-caption="Intent &mdash; urgency and pressure simulation" /></div>
+            <p class="caption">Intent development image</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">03</p><h2>Process</h2></div>
+        <div class="content-block">
+          <p>The concept was inspired by puzzle and hidden object games where users search for items within a space and set time. Using p5.js I was able to create the web game as I had coded in an invisible timer and score recorder in it. This allowed me to build a more complex game with more ease where users control a point representing Mateo and search for documents hidden across different rooms.</p>
+          <p>To support the narrative, visual elements like a floor plan and items to gather like passports, tickets, and permits were integrated into the experience. All these elements were designed by me personally and went through an iterative process to reach the outcome.</p>
+          <p>To create the sense of urgency, the interaction was structured around a time-based system where:</p>
+          <ul>
+            <li>Users must locate all require documents with a limited time</li>
+            <li>Feedback is given as items are found or missed</li>
+            <li>The experience progresses towards a clear success or failure outcome</li>
+          </ul>
+          <p>All these elements combined created a system where users felt more immersed with the digital experience. After completing or failing the task users are then provided with two outcomes where:</p>
+          <ul>
+            <li>Success = Mateo escapes and is directed to the next part of the narrative</li>
+            <li>Failure = Mateo is stopped and misses his chance and must retry</li>
+          </ul>
+        </div>
+
+        <div class="media-grid">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-process-1.jpg" alt="p5.js game development" data-caption="Process &mdash; p5.js game development" /></div>
+            <p class="caption">p5.js game development</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-process-2.jpg" alt="Floor plan and visual elements" data-caption="Process &mdash; floor plan and visual element design" /></div>
+            <p class="caption">Floor plan and visual elements</p>
+          </div>
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-process-3.jpg" alt="Game outcomes and feedback" data-caption="Process &mdash; success and failure outcomes" /></div>
+            <p class="caption">Game outcomes and feedback</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="challenges">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">04</p><h2>Challenges</h2></div>
+        <div class="content-block">
+          <p>A major challenge in this artifact was balancing gameplay and user experience where there would be too many pop-up messages which interrupted the flow, and too little feedback which made the objective unclear. Adding in feedback was easy, however, user testing suggested that too many repeated pop ups were frustrating. But removing them greatly reduced the tension. So, it become a balancing act to have enough pop ups for feedbacks and tension but not having too much that it frustrated user&rsquo;s flow.</p>
+          <p>Another challenge was the system behaviour where bugs caused pop ups to trigger incorrectly, or the time paused during interaction which reduced the difficulty. To resolve this:</p>
+          <ul>
+            <li>The timer was kept running even when pop-ups appeared</li>
+            <li>Player movement was temporarily paused instead</li>
+            <li>UI elements were refined to improve clarity</li>
+          </ul>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-challenges.jpg" alt="Gameplay balancing challenges" data-caption="Challenges &mdash; pop-up and timer balancing" /></div>
+            <p class="caption">Gameplay balancing challenges</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container"><div class="section-card">
+        <div class="section-heading"><p class="section-label">05</p><h2>Reflection</h2></div>
+        <div class="content-block">
+          <p>This artifact demonstrates how interaction design can create an emotional tension through systems instead of just visuals alone.</p>
+          <p>By combing movement, time pressure, and out-come based feedback, the experience allowed users to feel the urgency of Mateo&rsquo;s situation rather than just observing it.</p>
+        </div>
+
+        <div class="media-grid single">
+          <div class="thumb-card">
+            <div class="image-frame"><img class="clickable-image" src="images/getaway-reflection.jpg" alt="Final Before the Getaway artifact" data-caption="Reflection &mdash; final digital artifact" /></div>
+            <p class="caption">Final Before the Getaway artifact</p>
+          </div>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><p>Visual Narrative Process Document</p><p>Kolin &amp; Mateo &mdash;</p></div></footer>
+</body>
+</html>

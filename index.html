@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolin & Mateo | Process Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       TOP NAV — minimal, sticky
+       ═══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-line">Visual Narrative</span>
+        <h1>Kolin &amp; Mateo</h1>
+      </div>
+      <nav class="site-nav">
+        <a href="#synopsis">Synopsis</a>
+        <a href="#walkthrough">Walkthrough</a>
+        <a href="#gallery">Artifacts</a>
+        <a href="#about">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO — large bold intro
+         ═══════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Interactive Narrative — Process Document</p>
+          <h2 class="hero-headline">Two perspectives<br>One conflict.</h2>
+          <p class="hero-description">
+            Exploring how proximity, perspective, and medium shape the way people
+            understand conflict — through the parallel stories of a soldier and a civilian.
+          </p>
+         
+        </div>
+        <div class="hero-images">
+          <div class="hero-img-wrapper">
+            <img
+              src="images/Kolin.png"
+              alt="Kolin — soldier perspective"
+            />
+            <span class="hero-img-label">Kolin</span>
+          </div>
+          <div class="hero-img-wrapper">
+            <img
+              src="images/Mateo.png"
+              alt="Mateo — civilian perspective"
+            />
+            <span class="hero-img-label">Mateo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SYNOPSIS
+         ═══════════════════════════════════════════ -->
+    <section id="synopsis" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Synopsis</p>
+          <h2>The Story</h2>
+        </div>
+        <div class="card synopsis-card">
+          <p>
+            A border conflict between Mariscal and Quechua escalates into full-scale war after a deadly attack. As the Mariscalian President calls for retaliation, an anti-war protest group fractures when Kolin, a key member, chooses to enlist, believing he must defend his country. Mateo, the group's most passionate pacifist, refuses at first.
+          </p>
+          <p>
+            Years pass. Mateo grows disillusioned as his protests fail to change anything, eventually choosing a comfortable life abroad, far from the war. Meanwhile, Kolin rises through the military ranks, earning recognition for his success, until a disastrous mission leaves his team dead and him severely injured. Though honored as a hero, Kolin is consumed by guilt and questions the value of his sacrifice.
+          </p>
+          <p>
+            When the war finally ends, Kolin and Mateo reunite. One is decorated but broken, while the other is successful but burdened with regret. As they confront each other and themselves, they are left wondering whether conviction, survival, or sacrifice truly meant anything at all.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         WALKTHROUGH — video embed
+         ═══════════════════════════════════════════ -->
+    <section id="walkthrough" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Walkthrough</p>
+          <h2>Video Walkthrough</h2>
+        </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/5VrdJtolFNU"
+            title="Project Walkthrough"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALLERY — scroll-driven circular showcase
+         The outer wrapper is tall to create scroll runway.
+         The inner sticky container holds the visible UI.
+         ═══════════════════════════════════════════ -->
+    <section id="gallery" class="gallery-section">
+      <div class="gallery-scroll-runway">
+        <div class="gallery-sticky">
+          <div class="container gallery-layout">
+
+            <!-- Circle cluster -->
+            <div class="gallery-circles" aria-label="Artifact gallery">
+              <!--
+                Each .gallery-circle = one artifact.
+                data-index: used by JS to identify the item.
+                Replace the <img> src with your own images later.
+              -->
+              <button class="gallery-circle is-active" data-index="0" aria-label="Protest Poster">
+                <img
+                  src="images/Poster/icon.png"
+                  alt="Protest Poster placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="1" aria-label="TV Address">
+                <img
+                  src="images/tv_address/addressfinal.png"
+                  alt="TV Address placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="2" aria-label="Arduino Interaction">
+                <img
+                  src="images/arduino/arduino_withImages.jpg"
+                  alt="Arduino Interaction placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="3" aria-label="Mateo's Escape">
+                <img
+                  src="images/escape/ending_no.png"
+                  alt="Mateo's Escape placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="4" aria-label="AR Turn Around">
+                <img
+                  src="images/AR 1/war.JPG"
+                  alt="AR Turn Around placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="5" aria-label="AR Confrontation">
+                <img
+                  src="images/AR 2/AR_1.png"
+                  alt="AR Confrontation placeholder"
+                />
+              </button>
+              <button class="gallery-circle" data-index="6" aria-label="Medal + Deployment Letter">
+                <img
+                  src="images/medal_artifact/finalportrait.jpg"
+                />
+              </button>
+              <button class="gallery-circle" data-index="7" aria-label="VR Experience">
+                <img
+                  src="images/VR /icon2.png"
+                  alt="VR Experience placeholder"
+                />
+              </button>
+            </div>
+
+            <!-- Info panel — updates with active circle -->
+            <div class="gallery-info">
+              <div class="gallery-counter">
+                <span class="gallery-counter-current">01</span>
+                <span class="gallery-counter-sep">/</span>
+                <span class="gallery-counter-total">08</span>
+              </div>
+
+              <div class="gallery-details">
+                <!--
+                  One .gallery-detail per item.
+                  Only the one matching the active index is visible.
+                -->
+                <div class="gallery-detail is-visible" data-detail="0">
+                  <h3>Poster</h3>
+                  <p class="gallery-detail-subtitle">Physical Artifact — Civilian Narrative</p>
+                  <p>Poster that establishes the central tension between duty and resistance, setting up the choice that drives the entire experience.</p>
+                  <a href="poster.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="1">
+                  <h3>TV Address</h3>
+                  <p class="gallery-detail-subtitle">Broadcast — Narrative Branching Point</p>
+                  <p>A televised address experienced simultaneously by both characters, marking the point where the narrative splits into two diverging paths.</p>
+                  <a href="tv-address.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="2">
+                  <h3>Arduino Interaction</h3>
+                  <p class="gallery-detail-subtitle">Physical Computing — Mateo's Path</p>
+                  <p>A sensor-driven piece capturing ambient tension and environmental disruption through tangible electronic response.</p>
+                  <a href="arduino-interaction.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="3">
+                  <h3>Mateo's Escape</h3>
+                  <p class="gallery-detail-subtitle">Mixed Media — Mateo's Path</p>
+                  <p>The moment conflict stops being distant and becomes immediate — collapsing the boundary between observer and survivor.</p>
+                  <a href="mateos-escape.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="4">
+                  <h3>AR Turn Around</h3>
+                  <p class="gallery-detail-subtitle">Augmented Reality — Mateo's Path</p>
+                  <p>An augmented reality experience where Mateo physically turns around to discover what has been hidden behind him — the war closing in.</p>
+                  <a href="ar-turn-around.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="5">
+                  <h3>AR Confrontation</h3>
+                  <p class="gallery-detail-subtitle">Augmented Overlay — Mateo's Path</p>
+                  <p>Conflict layered onto everyday space — mediated, fragmented, and partially avoidable through augmented reality.</p>
+                  <a href="ar-confrontation.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="6">
+                  <h3>Medal + Deployment Letter</h3>
+                  <p class="gallery-detail-subtitle">Physical Artifact — Kolin's Path</p>
+                  <p>Physical artifacts representing the institutional framing of Kolin's experience — a medal of service and the letter that sent him to war.</p>
+                  <a href="medal-deployment.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+                <div class="gallery-detail" data-detail="7">
+                  <h3>VR Experience</h3>
+                  <p class="gallery-detail-subtitle">Immersive Environment — Kolin's Path</p>
+                  <p>Full immersion into the soldier's perspective, using spatial presence and scale to collapse emotional distance.</p>
+                  <a href="vr-experience.html" class="btn btn-secondary btn-sm">Open Artifact</a>
+                </div>
+              </div>
+
+              <!-- Prev / Next controls -->
+              <div class="gallery-nav">
+                <button class="gallery-nav-btn gallery-prev" aria-label="Previous artifact">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="15" y1="10" x2="5" y2="10"/>
+                    <polyline points="10,5 5,10 10,15"/>
+                  </svg>
+                  <span>Prev</span>
+                </button>
+                <button class="gallery-nav-btn gallery-next" aria-label="Next artifact">
+                  <span>Next</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="10" x2="15" y2="10"/>
+                    <polyline points="10,5 15,10 10,15"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT — brief project description
+         ═══════════════════════════════════════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>Team Members</h2>
+        </div>
+        <div class="team-grid">
+          <div class="card">
+            <h3>Jiayin</h3>
+            <ul class="team-roles">
+              <li>Digital Platform Development</li>
+              <li>Illustration</li>
+              <li>Narrative Structure Supervisor</li>
+              <li>Video Walkthrough Editor</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Louisa</h3>
+            <ul class="team-roles">
+              <li>Poster + Arduino Development</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Jesse</h3>
+            <ul class="team-roles">
+              <li>AR Experience Development </li>
+              <li>Physical Artifacts Developer</li>
+              <li>Narrative Production</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Tina</h3>
+            <ul class="team-roles">
+              <li>VR Experience Development</li>
+              <li>3D Model Creation</li>
+              <li>Video Walkthrough Actor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Visual Narrative Process Document</p>
+      <p>Kolin &amp; Mateo </p>
+    </div>
+  </footer>
+
+</body>
+</html>
